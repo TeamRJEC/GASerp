@@ -19,6 +19,7 @@ Welcome to the Google Sheets Mini ERP repository. This project was created to su
     - [Production Order Tab](#productionordertab)
     - [Sales Info Tab](#salesinfotab)
   - [Web Interface](#web-interface)
+  - [Handyman ERP Example](#handyman-erp-example)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -202,6 +203,15 @@ The sales info tab is where you can search and edit/delete product registrations
 If you hit the `Edit` button for a product registration, it will open the associated Google Forms link, so that you can update the product information.
 
 If you hit the `Delete` button for a product registration, it will delete the record in the Google Sheet, so that users will no longer see the product when he/she tries to take a new order. Note that deleting product registration will not delete any previous invoice records. Also note that it will not delete the response from the Google Forms; it will only delete the record in the Google Sheets.
+
+## Handyman ERP Example
+
+The repository also includes a simplified example for a handyman business. See `Handyman/HandymanERP.js` for a script that tracks jobs, clients, and materials using the `GasCrud` library.
+
+1. Deploy the `Crud.js` library as described above.
+2. Copy `Handyman/HandymanERP.js` into your Apps Script project and set `HM_SPREADSHEET` to your sheet ID.
+3. Create sheets named `Jobs`, `Clients`, and `Materials` in that spreadsheet.
+4. Use functions like `addJob`, `updateJob`, `deleteJob`, and `getRecentJobs` to manage your handyman work orders.
 
 ## Contributing
 
